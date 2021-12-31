@@ -3,6 +3,18 @@ Angular framework kullanılarak gerçekleştirilen projede, kitap alınması, ia
 
 # Projede kullanılan teknolojiler
 ![35](https://user-images.githubusercontent.com/49997690/147836151-fc0f9faa-7758-492f-b915-fe425778988e.PNG)
+<br/>
 
-angular 13.1.2
-bootstrap 5.1.3
+**Angular 13.1.2** <br/>
+**Bootstrap 5.1.3** <br/>
+**Firebase** <br/>
+
+# Library Project 
+<br/>
+Projenin amacı,
+Sisteme kayıt olup giriş yapan kullanıcılar, belirtilen kategorilerde bulunan kitaplardan istediğini kendi listelerine ekleyebilir, listesinden çıkarabilir<br/>
+<br/>
+
+Kullanıcı sisteme kayıt olduğu anda kullanıcı bilgileri Firebase'de kaydedilir. Her bir kullanıcının kendisine ait User UID bilgisi bulunur.
+Kullanıcı sisteme giriş yaptığı zaman, sistem tarafından bu durumlar kontrol edilir. parolanın yanlış girilmesi, yanlış eposta ile giriş yapılması ya da kayıt yaparken girilen eposta daha önce kullanılmışsa hata mesajı ekrana yazdırılır.
+
