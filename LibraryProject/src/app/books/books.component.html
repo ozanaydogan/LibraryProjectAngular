@@ -1,0 +1,60 @@
+
+    <div class="row">
+      <div class="col-md-2">
+        <app-bookcategories></app-bookcategories>
+      </div>
+      <div class="col-md-9">
+
+          <h1 *ngIf= "filteredBooks.length>0" >{{ title1 }}</h1>
+
+        <div class= "alert alert-warning" *ngIf= "filteredBooks.length == 0">
+            Kitap bulunamadi !
+        </div>
+
+            <div class = "alert alert-warning" *ngIf= "filteredBooks.length > 0">
+             {{filteredBooks.length}} kitap bulundu.
+            </div>
+
+            <div class="mb-3">
+                <input  type="text" class="form-control" [(ngModel)]= "filterText" (ngModelChange)="onInputChange()" placeholder="Search">
+                <small class="text-muted" *ngIf="filterText"> aradığınız kelime {{filterText}}</small>
+            </div>
+            <ng-template [ngTemplateOutlet]="bookList1"></ng-template>
+      </div>
+    </div>
+
+
+  <ng-template #no_books>
+    <div class="alert alert-warning" >
+      Kitap bulunamadı.
+    </div>
+  </ng-template>
+
+  <ng-template #bookList1>
+<div class="card mb-3" *ngFor = "let item of filteredBooks">
+    <div class="row">
+        <div class = "col-4">
+      <img src="assets/img/{{item.imageUrl}}" class="img fluit rounded-start" alt="">
+        </div>
+        <div class = "col-8">
+            <div class="card-body">
+                <h2 class="card-title">{{item.title}}</h2>
+                <p class = "card-text"> {{item.description}}</p>
+                <p class = "card-text"> Yazar: {{  item.author}}</p>
+                <div>
+                    <a routerLink="/books/{{item.id}}" class="btn btn-sm btn-warning">Details</a>
+                    <button *ngIf="!getButtonstate(item)"
+                     (click)="addToList($event,item)" 
+                     class="btn btn-sm btn-success ms-1">Add to List</button>
+
+                     <button 
+                     *ngIf="getButtonstate(item)"
+                     (click)="addToList($event,item)" 
+                     class="btn btn-sm btn-danger ms-1">Remove from List</button>
+                 </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</ng-template>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "libraryproject-fdb55": {
+      "hosting": {
+        "LibraryProject": [
+          "libraryproject-fdb55"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "libraryproject-fdb55"
+  }
+}

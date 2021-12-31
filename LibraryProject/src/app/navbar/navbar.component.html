@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class = "navbar-brand">Library App</a>
+        <ul class="navbar-nav me-auto">
+            <li *ngIf= "isAuthenticated" class = "nav-item">
+                <a href="" class="nav-link activate">Home</a>
+            </li>
+            <li *ngIf= "isAuthenticated" class = "Books">
+                <a href="/books" class="nav-link activate">Books</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav">
+            <li *ngIf= "isAuthenticated" class="nav-item">
+                <a routerLink="/books/create" class="nav-link">Create Book</a>
+            </li>
+            <li *ngIf= "isAuthenticated" class="nav-item">
+                <a routerLink="/categories/create" class="nav-link">Create Category</a>
+            </li>
+            <li *ngIf= "isAuthenticated" class="nav-item">
+                <a routerLink="/books/mybooks" class="nav-link">My Books</a>
+            </li>
+
+            <li *ngIf= "!isAuthenticated" class="nav-item">
+                <a routerLink="/auth" class="nav-link">Login</a>
+              </li>
+              <li *ngIf= "isAuthenticated" class="nav-item">
+                  <a (click)="onLogout()" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>

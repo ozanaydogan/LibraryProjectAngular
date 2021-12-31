@@ -1,0 +1,23 @@
+<div *ngIf= "book else no_book">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/img/{{ book[0].imageUrl }}" class="img-fluid rounded-start" alt="">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h1 class="card-title">{{ book[0].title }}</h1>
+            <p class="card-text">{{ book[0].description }}</p>
+            <p class = "card-text"> Yazar: {{  book[0].author}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <ng-template #no_book>
+    <div class="alert alert-warning" >
+        Kitap bulunamadı.
+    </div>
+  </ng-template>

@@ -1,0 +1,33 @@
+<form>
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input #title type="text" class="form-control">
+    </div>
+  
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea #description class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="author" class="form-label">author</label>
+        <input #author type="text" class="form-control">
+      </div>
+  
+    <div class="mb-3">
+      <label for="imageUrl" class="form-label">imageUrl</label>
+      <input #imageUrl type="text" class="form-control">
+    </div>
+  
+  
+    <div class="mb-3">
+      <label for="type" class="form-label">category</label>
+      <select #type class="form-select">
+        <option *ngFor= "let item of categories" [value]= "item.id"> {{ item.name }}</option>
+      </select>
+    </div>
+  
+    <button class="btn btn-primary" (click)="createBook(title, description, imageUrl, type, author)">Create</button>
+  
+  </form>
