@@ -19,5 +19,9 @@ Kullanıcı sisteme kayıt olduğu anda kullanıcı bilgileri Firebase'de kayded
 ![1](https://user-images.githubusercontent.com/49997690/147837038-fabf6983-244d-4dca-afe5-001f1aee543f.PNG)<br/>
 Kullanıcı sisteme giriş yaptığı zaman, sistem tarafından bu durumlar kontrol edilir. parolanın yanlış girilmesi, yanlış eposta ile giriş yapılması ya da kayıt yaparken girilen eposta daha önce kullanılmışsa hata mesajı ekrana yazdırılır.<br/>
 
+![3](https://user-images.githubusercontent.com/49997690/147837070-aef3e7b5-9721-4bd8-937a-67cdac109380.PNG)<br/>
+bu durumlar app/services/error.interceptor.ts dosyasındaki kodlarla kontrol edilir.<br/>
+![2](https://user-images.githubusercontent.com/49997690/147837064-a22ec543-54f4-49b8-9b87-69d0099514b3.PNG)<br/>
+
 
 
