@@ -8,6 +8,7 @@ In the project carried out using Angular, situations such as buying and returnin
 **Angular 13.1.2** <br/>
 **Bootstrap 5.1.3** <br/>
 **Firebase** <br/>
+**Node.js v16.13.1** <br/>
 <br/>
 
 # Library Project 
