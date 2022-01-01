@@ -13,7 +13,7 @@ In the project carried out using Angular, situations such as buying and returnin
 
 # Library Project 
 <br/>
-The purpose of the project, Users who have registered and logged in to the system can add or remove from their own list the books found in the specified categories.
+The purpose of the project, users who have registered and logged in to the system can add or remove from their own list the books found in the specified categories.
 <br/>
 <br/>
 
