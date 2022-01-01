@@ -1,7 +1,7 @@
 # LibraryProjectAngular
 In the project carried out using Angular, situations such as buying and returning books, listing library books, listing user books were carried out, and firebase was used.
 
-# Projede kullanılan teknolojiler
+# Used Technologies
 ![35](https://user-images.githubusercontent.com/49997690/147836151-fc0f9faa-7758-492f-b915-fe425778988e.PNG)
 <br/>
 
@@ -72,7 +72,7 @@ In case a user is logged in, he can own any book in the library or return the bo
 ![20](https://user-images.githubusercontent.com/49997690/147837356-40bf7dc7-0781-4ba7-b019-2b815647b83b.PNG) <br/><br/>
 The process looks like the image in firebase. <br/>
 ![21](https://user-images.githubusercontent.com/49997690/147837366-383c95f0-fa21-487d-8328-3d5d6b224ea5.PNG) <br/><br/>
-in the same way, he can return the book that he has refused to buy or that he wants to return, by clicking the "remove from list" button. Operations are performed in realtime under users on firebase. <br/>
+In the same way, he can return the book that he has refused to buy or that he wants to return, by clicking the "remove from list" button. Operations are performed in realtime under users on firebase. <br/>
 If the person wants to create any book or category, they are directed to the relevant page by clicking on the "create book", "create category" access places on the navbar.<br/>
 ![26](https://user-images.githubusercontent.com/49997690/147837409-fcf6f7f8-9ab9-4124-9663-d5a93a42411b.PNG)<br/><br/>
 He can fill in all the necessary features of the book he wants to create and click the create button. <br/>
@@ -81,7 +81,7 @@ As soon as the book is created, it is directed to the main page and the status o
 ![24](https://user-images.githubusercontent.com/49997690/147837393-e28ac82c-bb60-45a7-992c-f1c4baa985df.PNG) <br/><br/>
 All fields required to create a book must be filled in. otherwise it will show alertify alert error message. <br/>
 ![27](https://user-images.githubusercontent.com/49997690/147837417-3b7b7330-aeec-4c08-9cbf-53f81f6d564b.PNG) <br/><br/>
-the process takes place in realtime on firebase <br/>
+The process takes place in realtime on firebase <br/>
 ![25](https://user-images.githubusercontent.com/49997690/147837399-cc10efc6-d7c7-4c65-bb14-f0745cbafad8.PNG) <br/><br/>
 same operations apply in create category. As soon as any category is created, this process takes place on firebase and the book categories change dynamically on the site page. <br/><br/>
 ![28](https://user-images.githubusercontent.com/49997690/147837425-ac9851f4-4ec2-4843-9291-59c48d80a89d.PNG) <br/>
