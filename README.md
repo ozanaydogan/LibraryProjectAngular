@@ -3,7 +3,7 @@ In the project carried out using Angular, situations such as buying and returnin
 
 # Used Technologies
 ![35](https://user-images.githubusercontent.com/49997690/147836151-fc0f9faa-7758-492f-b915-fe425778988e.PNG)
-<br/>
+<br/> 
 
 **Angular 13.1.2** <br/>
 **Bootstrap 5.1.3** <br/>
